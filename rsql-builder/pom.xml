@@ -17,6 +17,13 @@
     <name>RSQL Builder</name>
     <description>Builder of RSQL / FIQL (query language for RESTful APIs)</description>
 
+    <licenses>
+        <license>
+            <name>APACHE 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
     <dependencies>
         <dependency>
             <groupId>cz.jirutka.rsql</groupId>

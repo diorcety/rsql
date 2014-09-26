@@ -17,6 +17,13 @@
     <name>RSQL</name>
     <description>RSQL / FIQL (query language for RESTful APIs)</description>
 
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>http://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
     <dependencies>
         <!-- Not needed in runtime -->
         <dependency>

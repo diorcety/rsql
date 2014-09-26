@@ -17,6 +17,13 @@
     <name>RSQL Hibernate Visitor</name>
     <description>Hibernate Visitor for RSQL / FIQL (query language for RESTful APIs)</description>
 
+    <licenses>
+        <license>
+            <name>APACHE 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
     <properties>
         <hibernate.em.version>4.1.0.Final</hibernate.em.version>
         <hsqldb.version>1.8.0.10</hsqldb.version>

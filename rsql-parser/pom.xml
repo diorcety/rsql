@@ -17,6 +17,13 @@
     <name>RSQL Parser</name>
     <description>Parser of RSQL / FIQL (query language for RESTful APIs) written in JavaCC.</description>
 
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>http://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
     <dependencies>
         <dependency>
             <groupId>cz.jirutka.rsql</groupId>

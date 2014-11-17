@@ -58,6 +58,7 @@
         <module>rsql</module>
         <module>rsql-parser</module>
         <module>rsql-builder</module>
+        <module>rsql-builder-gwt</module>
         <module>rsql-visitor-hibernate</module>
     </modules>
 
@@ -152,6 +153,19 @@
                                 <exclude>**/TokenMgrError.*</exclude>
                             </excludes>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>

@@ -284,7 +284,7 @@ public class HibernateCriterionVisitor extends NoArgRSQLVisitorAdapter<Criterion
         if (operator.equals(RSQLOperators.EQUAL)) {
             if (!isCollection) {
                 if (String.class.isInstance(firstArgument) && ((String) firstArgument).contains("%")) {
-                    return Restrictions.like(exp, firstArgument);
+                    return Restrictions.ilike(exp, firstArgument);
                 } else {
                     return Restrictions.eq(exp, firstArgument);
                 }
@@ -294,7 +294,7 @@ public class HibernateCriterionVisitor extends NoArgRSQLVisitorAdapter<Criterion
         } else if (operator.equals(RSQLOperators.NOT_EQUAL)) {
             if (!isCollection) {
                 if (String.class.isInstance(firstArgument) && ((String) firstArgument).contains("%")) {
-                    return Restrictions.not(Restrictions.like(exp, firstArgument));
+                    return Restrictions.not(Restrictions.ilike(exp, firstArgument));
                 } else {
                     return Restrictions.ne(exp, firstArgument);
                 }
